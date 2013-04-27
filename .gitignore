@@ -18,3 +18,9 @@ local.properties
 # Eclipse project files
 .classpath
 .project
+
+# QuickRide
+*.txt
+QuickRide-Android-Core/
+QuickRide-Car-Client/
+
