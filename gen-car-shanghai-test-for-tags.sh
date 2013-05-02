@@ -13,3 +13,4 @@ apk_file_release=qr-car-$var_date-test.apk
 cp target/$apk_file ../$apk_file_release
 scp -r ../$apk_file_release root@www.idingche.com.cn:/var/www/html/apkfile/test
 echo "done..."
+echo 'generate '$apk_file_release >> /www/qr-android-log.txt
