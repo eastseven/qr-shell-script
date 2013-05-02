@@ -5,7 +5,14 @@ rm -rf *.apk
 
 project_name=QuickRide-Car-Client
 cd $project_name
-ant profile-test-chengdu main
+
+profile_name=$1
+if [[ -z $profile_name ]]
+then
+    read -p 'Enter profile name[profile-test-chengdu / profile-test-chengdu-wan]: ' profile_name;
+fi
+
+ant $profile_name main
 var_date=`date "+%Y%m%d%H%M%S"`
 cp target/$apk_file ../qr-car-$var_date-101.apk
 echo "done..."
