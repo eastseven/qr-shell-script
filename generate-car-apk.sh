@@ -10,6 +10,10 @@ profile_name=$1
 if [[ -z $profile_name ]]
 then
     read -p 'Enter profile name[profile-test-chengdu / profile-test-chengdu-wan]: ' profile_name;
+    if [[ -z $profile_name  ]]
+    then
+        profile_name=profile-test-chengdu
+    fi
 fi
 
 ant $profile_name main
