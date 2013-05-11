@@ -5,6 +5,7 @@ rm -rf *.apk
 
 project_name=QuickRide-Car-Client
 cd $project_name
+sh refresh.sh
 
 profile_name=$1
 if [[ -z $profile_name ]]
