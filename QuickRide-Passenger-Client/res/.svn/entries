@@ -1,61 +1,0 @@
-10
-
-dir
-11395
-svn://192.168.1.101/quickride/trunck/QuickRide-Passenger-Client/res
-svn://192.168.1.101/quickride
-
-
-
-2013-04-25T04:51:56.308854Z
-10762
-dongqi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-944b7c19-7897-4103-98e9-9aaee746220c
-
-values
-dir
-
-drawable
-dir
-
-drawable-hdpi
-dir
-
-anim
-dir
-
-drawable-ldpi
-dir
-
-drawable-mdpi
-dir
-
-raw-zh
-dir
-
-raw
-dir
-
-drawable-xhdpi
-dir
-
-layout
-dir
-
-values-zh
-dir
-

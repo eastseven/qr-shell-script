@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="domain">template_domain</string>
-    <string name="tcp_ip">template_tcp_ip</string>
-    <string name="tcp_port">template_tcp_port</string>
-</resources>
