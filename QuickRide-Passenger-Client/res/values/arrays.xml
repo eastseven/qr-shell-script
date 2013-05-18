@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="city_name">
+        <item>上海</item>
+        <item>成都</item>
+    </string-array>
+    <string-array name="rent_car_status">
+        <item>已订车</item>
+        <item>已派车</item>
+        <item>已退订</item>
+        <item>已完成</item>
+        <item>已取消</item>
+        <item>服务中</item>
+    </string-array>
+    <string-array name="order_status">
+        <item>已预订</item>
+        <item>已订车</item>
+        <item>服务中</item>
+        <item>已完成</item>
+        <item>已退订</item>
+        <item>已取消</item>
+        <item>车辆故障</item>
+    </string-array>
+    <string-array name="pay_type">
+        <item>现金支付</item>
+        <item>银行卡支付</item>
+    </string-array>
+
+</resources>

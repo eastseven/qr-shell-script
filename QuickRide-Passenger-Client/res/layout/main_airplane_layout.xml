@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_content_airplane_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@id/main_content_airplane_radio_group"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@id/main_content_airplane_radio_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_pickup" />
+
+        <RadioButton
+            android:id="@id/main_content_airplane_radio_seeoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_seeoff" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@id/main_content_airplane_start_address"
+        style="@style/form"
+        android:hint="@string/main_start_address" >
+    </EditText>
+
+    <EditText
+        android:id="@id/main_content_airplane_end_address"
+        style="@style/form"
+        android:hint="@string/main_end_address" >
+    </EditText>
+
+    <EditText
+        android:id="@id/main_content_airplane_flight_date"
+        style="@style/form"
+        android:hint="@string/main_flight_date" >
+    </EditText>
+
+    <EditText
+        android:id="@id/main_content_airplane_flight_no"
+        style="@style/form"
+        android:hint="@string/main_flight_number" >
+    </EditText>
+
+    <EditText
+        android:id="@id/main_content_airplane_code"
+        style="@style/form"
+        android:hint="@string/main_code" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center" >
+
+        <Button
+            android:id="@id/main_content_airplane_check"
+            style="@style/form_button_check"
+            android:text="@string/main_check" />
+
+        <Button
+            android:id="@id/main_content_airplane_reset"
+            style="@style/form_button_reset"
+            android:text="@string/main_reset" />
+    </LinearLayout>
+
+</LinearLayout>

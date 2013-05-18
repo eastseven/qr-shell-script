@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 车辆档次 下拉框 -->
+    <string name="get_car_grade_list_url">/html/carGrade/?m=index</string>
+
+    <!-- 特价产品列表 -->
+    <string name="get_order_product_list_url">/html/customerService/?m=listOrderProduct</string>
+</resources>

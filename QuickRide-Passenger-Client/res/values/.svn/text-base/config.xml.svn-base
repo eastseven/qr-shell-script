@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pulse_interval">60</string>
+    <string name="database_name">passenger</string>
+    <string name="database_version">1</string>
+    <string name="sms_gateway">——爱订车</string>
+    <string name="service_phone">4008841841,2</string>
+    <string name="google_api_key">054rY6cGou91JbJh6-T-W-2DHY3zBmYARg5imYw</string>
+    <string name="mapabc_key">1557766abd1c0c689304a34236065547a118cbaf9d940a5a8e6e8397b32f94b478523002656423bb</string>
+    <string name="get_verification_code_url">/html/customer/?m=sendSms&amp;mobileNo=</string>
+    <string name="regist_url">/html/customer/?m=regist</string>
+    <string name="login_url">/j_spring_security_check</string>
+    <string name="logout_url">/j_spring_security_logout</string>
+    <string name="get_captcha_url">/j_captcha_get</string>
+    <string name="get_rent_status_url">/html/customerService/?m=getRentStatus</string>
+    <string name="modify_password_url">/html/user/?m=modifyPassword</string>
+    <string name="get_user_url">/html/user/?m=getCurrentUser</string>
+    <string name="update_user_url">/html/customer/?m=updateByMobile</string>
+    <string name="get_around_cars_url">/html/customerService/?m=setPickup</string>
+    <string name="request_lease_car_url">/html/customerService/?m=requestLeaseCar</string>
+    <string name="select_lease_car_url">/html/customerService/?m=selectLeaseCar</string>
+    <string name="view_order_detail_url">/html/customerService/?m=viewOrderDetail</string>
+    <string name="unsubscribe_url">/html/customerService/?m=cancelCar</string>
+    <string name="list_orders_url">/html/customerService/?m=listOrders</string>
+    <string name="rate_driver_url">/html/customerService/?m=rateDriver</string>
+    <string name="select_pay_type_url">/html/customerService/?m=selectPayType</string>
+    <string name="pay_url">/html/customerService/?m=pay</string>
+    <string name="get_my_coupons_url">/html/customerService/?m=getCouponsOfUser</string>
+    <string name="transfer_coupon_url">/html/customerService/?m=transferCoupon</string>
+    <string name="get_all_coupons_url">/html/customerService/?m=getAllCoupons</string>
+    <string name="get_coupons_url">/html/customerService/?m=getCoupon</string>
+    <string name="get_enable_coupons_url">/html/customerService/?m=getEnableCouponsOfUser</string>
+    <string name="get_points_log_url">/html/customerService/?m=getAllIntegralLog</string>
+    <string name="exchange_coupons_url">/html/customerService/?m=exchangeCoupon</string>
+    <string name="get_all_campaign_url">/html/customerService/?m=getAllSales</string>
+    <string name="get_unsubscribe_prompt_url">/html/customerService/?m=cancelCarTip</string>
+    <string name="send_active_email_url">/html/customer/?m=sendActiveEmail</string>
+    <string name="find_password_url">/html/customer/?m=retrievePassword</string>
+    <string name="update_app_url">/html/app/?m=updateApp</string>
+    <string name="send_crash_report_url">/html/appBreak/?m=add</string>
+    <string name="get_invite_no_url">/html/invite/?m=getInviteSms</string>
+    <string name="get_enabled_range_url">/html/orderRange/?m=getEnabledRange</string>
+    <string name="get_f_and_q_url">/faq.jsp</string>
+    <string name="get_agreement_url">/agreement.jsp</string>
+
+</resources>

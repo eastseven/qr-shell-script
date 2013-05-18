@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.quickride.customer"
+    android:versionCode="21"
+    android:versionName="2.0.1" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name="ac.mm.android.app.ExpandApplication"
+        android:allowClearUserData="false"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light" >
+        <service
+            android:name="com.quickride.customer.security.service.CountDownService"
+            android:process=":remote" />
+        <service android:name=".common.service.PassengerTcpService" />
+
+        <activity
+            android:name="ac.mm.android.activity.HandleErrorActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="ac.mm.android.activity.TcpHandleErrorActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".common.activity.SplashActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".security.activity.LoginActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name=".common.activity.DistributorActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light" />
+        <activity
+            android:name=".security.activity.RegisterActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/register"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".security.activity.AccountNonactivatedActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/account_nonactivated"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chinapnr.payment2.Payment"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".security.activity.AccountManagementActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/account_management"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".security.activity.ModifyPasswordActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/modify_password"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".security.activity.ModifyAccountInfoActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/modify_account_info"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".security.activity.ModifyPhoneNumberActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/modify_phone_number"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".security.activity.MyInviteActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/my_invite_no"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".security.activity.RechargeActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/recharge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".trans.activity.RentCarWithMapAbcActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".trans.activity.RentCarWithGoogleMapActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".security.activity.MapChoseActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".trans.activity.SearchAddressWithMapAbcActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".trans.activity.SetRentTimeActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/setup_riding_time"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".trans.activity.ChoseCarActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/chose_car_type"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".trans.activity.CheckRouteWithMapAbcActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/route_check"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".report.activity.MyOrderListActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/my_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".report.activity.MyOrderDetailActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/order_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".trans.activity.SentCarNotificationActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".trans.activity.GetOnCarNotificationActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".trans.activity.LoadCustomerNotificationActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".trans.activity.GetOffCarNotificationActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".trans.activity.UndistributedCarActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payment.activity.ChosePaymentTypeActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/chose_payment_type"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payment.activity.CreditCardPayActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/credit_card_pay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payment.activity.MyPointsActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/my_points"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payment.activity.MyCouponsActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/my_coupons"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payment.activity.GetCouponsActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/get_coupons"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payment.activity.ExchangeCouponsActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/point_exchange_coupons"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payment.activity.MarketingCampaignActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/marketing_campaign"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".payment.activity.TransferCouponsActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:label="@string/transfer_coupons"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".common.activity.WebViewActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.MainTab" >
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+        <activity android:name=".ui.activity.OrderProductListActivity"    />
+        <activity android:name=".ui.activity.OrderServiceDetailsActivity" />
+        <activity android:name=".ui.activity.OrderInformationActivity"    />
+        <activity android:name=".ui.activity.OrderConfirmActivity"        />
+        <activity android:name=".ui.activity.OrderPayTypeActivity"        />
+        <activity android:name=".ui.activity.AccountActivity"             />
+        <activity android:name=".ui.activity.ModifyPhoneNumberActivity"   />
+        <activity android:name=".ui.activity.ModifyPasswordActivity"      />
+        <activity android:name=".ui.activity.MyOrderListActivity"         />
+        <activity android:name=".ui.activity.MyOrderDetailActivity"       />
+        <activity android:name=".ui.activity.MyCouponsActivity"           />
+        <activity android:name=".ui.activity.MyInviteActivity"            />
+        <activity android:name=".ui.activity.FaqActivity"                 />
+    </application>
+
+</manifest>

@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@id/get_coupons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/arrow_btn"
+        android:text="@string/get_coupons"
+        android:textColor="@color/dark"
+        android:textSize="22.0sp" />
+
+    <TabHost
+        android:id="@id/order_tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="3dip" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:stretchColumns="*" >
+
+            <TableRow android:layout_weight="1" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@id/wait_execute_order"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <ac.mm.android.view.ScrollPagingListView
+                            android:id="@id/wait_execute_order_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:cacheColorHint="#00000000"
+                            android:divider="@null"
+                            android:listSelector="@android:color/transparent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/finished_order"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <ac.mm.android.view.ScrollPagingListView
+                            android:id="@id/finished_order_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:cacheColorHint="#00000000"
+                            android:divider="@null"
+                            android:listSelector="@android:color/transparent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/canceled_order"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical" >
+
+                        <ac.mm.android.view.ScrollPagingListView
+                            android:id="@id/canceled_order_list"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:cacheColorHint="#00000000"
+                            android:divider="@null"
+                            android:listSelector="@android:color/transparent" />
+                    </LinearLayout>
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+                </TabWidget>
+            </TableRow>
+        </TableLayout>
+    </TabHost>
+
+</LinearLayout>

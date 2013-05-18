@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首页 -->
+    <string name="main_airplane">接机送机</string>
+    <string name="main_car"     >查询预定</string>
+    <string name="main_coupon"  >特价优惠</string>
+    <string name="main_more"    >更多</string>
+    
+    <string name="main_home"  >首页</string>
+    <string name="main_back"  >返回</string>
+    <string name="main_next"  >下一步</string>
+    <string name="main_cancel">取消</string>
+    
+    <!-- 通用 -->
+    <string name="main_check"  >查询</string>
+	<string name="main_reset"  >重置</string>
+	<string name="main_earlier">更早</string>
+	<string name="main_later"  >更晚</string>
+    
+    <!-- 接机送机 -->
+    <string name="main_pickup"        >接机</string>
+    <string name="main_seeoff"        >送机</string>
+    <string name="main_start_address" >起点</string>
+    <string name="main_end_address"   >终点</string>
+    <string name="main_flight_date"   >航班日期</string>
+    <string name="main_flight_number" >航班号</string>
+    <string name="main_code"          >优惠码</string>
+	<string name="main_select_airport">请选择机场</string>
+    
+    <!-- 查询预定 -->
+    <string name="main_pickup_time">乘车时间</string>
+    
+    <!-- 特价优惠 -->
+    <string name="main_airport_shanghai_0" >浦东机场</string>
+    <string name="main_airport_shanghai_1" >虹桥机场1</string>
+    <string name="main_airport_shanghai_2" >虹桥机场2</string>
+	<string name="main_title_coupon_result">特价优惠查询结果</string>    
+    
+    <!-- 更多 -->
+    <string name="main_more_logout"       >退出当前账号</string>
+    <string name="main_more_my_order"     >我的订单</string>
+    <string name="main_more_my_coupon"    >我的优惠券</string>
+    <string name="main_more_invite_firend">邀请亲友</string>
+    <string name="main_more_my_account"   >账号管理</string>
+    <string name="main_more_faq"          >常见问题</string>
+    
+    <!-- 订单服务详情 -->
+    <string name="main_service_details"     >服务详情</string>
+    <string name="main_sd_product_name"     >服务内容</string>
+    <string name="main_sd_car_grade"        >车辆档次</string>
+    <string name="main_sd_price"            >服务价格</string>
+    <string name="main_sd_pickup_time"      >乘车时间</string>
+    <string name="main_sd_pickup_address"   >起点</string>
+    <string name="main_sd_discharge_address">终点</string>
+    <string name="main_sd_flight_number"    >航班号</string>
+    
+    <!-- 订单信息 -->
+    <string name="main_title_order_info">订单信息</string>
+    <string name="main_order_info_tip"  >爱订车温馨提示：您还有机会修改订单，点击“下一步”按钮进入订单确认页面</string>
+    
+    <!-- 订单确认 -->
+    <string name="main_title_order_confirm">订单确认</string>
+    <string name="main_order_confirm"      >提交订单</string>
+    
+    <!-- 支付方式 -->
+    <string name="main_title_pay_type">支付方式</string>
+    <string name="main_order_pay"     >支付</string>
+    <string name="main_order_cancel"  >退订</string>
+    
+    <!-- 账户管理 -->
+    <string name="main_title_account"      >账户管理</string>
+    <string name="main_modify_account_info">修改账户信息</string>
+    <string name="main_modify_password"    >修改登录密码</string>
+    <string name="main_modify_phone_number">修改手机号码</string>
+    <string name="main_invite_no"          >邀请亲友</string>
+    <string name="main_auto_login"         >自动登录</string>
+    
+    <!-- 我的优惠券 -->
+    <string name="main_coupon_not_use">未使用</string>
+    <string name="main_coupon_used"   >已使用</string>
+    <string name="main_coupon_expired">已过期</string>
+    
+</resources>

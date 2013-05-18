@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/main_header_layout_widget" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_header_layout_widget" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingTop="24dp" >
+
+            <EditText style="@style/form" android:hint="实收金额"/>
+            <EditText style="@style/form" android:hint="车辆档次"/>
+            <EditText style="@style/form" android:hint="乘车时间"/>
+            <EditText style="@style/form" android:hint="上车地点"/>
+            <EditText style="@style/form" android:hint="下车地点"/>
+            <EditText style="@style/form" android:hint="乘车人姓名"/>
+            <EditText style="@style/form" android:hint="乘车人电话"/>
+
+            <Button
+                android:id="@+id/main_order_confirm"
+                style="@style/form_button_check"
+                android:layout_width="match_parent"
+                android:text="@string/main_order_confirm" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

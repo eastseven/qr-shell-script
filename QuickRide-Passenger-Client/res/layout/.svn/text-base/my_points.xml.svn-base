@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/get_coupons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/item_rounded"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:textColor="@color/dark" />
+
+        <TextView
+            android:id="@id/pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="42dip"
+            android:text="@string/point_exchange_coupons"
+            android:textColor="@color/littlegreen"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <ac.mm.android.view.ScrollPagingListView
+        android:id="@id/points_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/car_list_line"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

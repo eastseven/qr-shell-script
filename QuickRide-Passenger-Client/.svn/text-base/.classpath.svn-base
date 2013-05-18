@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="src" path="java/security"/>
+	<classpathentry kind="src" path="java/trans"/>
+	<classpathentry kind="src" path="java/report"/>
+	<classpathentry kind="src" path="java/endpoint"/>
+	<classpathentry kind="src" path="java/common"/>
+	<classpathentry kind="src" path="java/payment"/>
+	<classpathentry kind="src" path="java/ui"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

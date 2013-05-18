@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@id/version"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:gravity="right"
+        android:textColor="@color/dark" />
+
+    <Button
+        android:id="@id/modify_account_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="30dip"
+        android:background="@drawable/arrow_btn"
+        android:text="@string/modify_account_info"
+        android:textColor="@color/dark"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@id/modify_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/arrow_btn"
+        android:text="@string/modify_password"
+        android:textColor="@color/dark"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@id/modify_phone_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/arrow_btn"
+        android:text="@string/modify_phone_number"
+        android:textColor="@color/dark"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@id/invite_no"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/arrow_btn"
+        android:text="@string/my_invite_no"
+        android:textColor="@color/dark"
+        android:textSize="18.0sp" />
+
+    <CheckBox
+        android:id="@id/auto_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20.0dip"
+        android:checked="true"
+        android:text="@string/auto_login"
+        android:textColor="@android:color/black"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+*.class
+
+# Package Files #
+#*.jar
+*.war
+*.ear
+/lint.xml
+/bin
+/gen
+/target
+/local.properties
+/src/resources/res/values/server_config.xml

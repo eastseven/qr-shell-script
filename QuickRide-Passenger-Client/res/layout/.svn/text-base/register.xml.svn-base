@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@id/email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10.0dip"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress"
+            android:maxLength="100"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@id/phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:digits="+0123456789"
+            android:hint="@string/phone_hint"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:hint="@string/name_hint"
+            android:maxLength="10"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@id/user_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:hint="@string/user_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@id/again_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@id/verification_code_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:textColor="@color/red" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <EditText
+                android:id="@id/verification_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2.0dip"
+                android:layout_weight="1"
+                android:digits="0123456789"
+                android:hint="@string/verification_code_hint"
+                android:inputType="phone"
+                android:maxLength="4"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@id/get_verification_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/get_sms_code"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@id/invite_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:hint="@string/invite_no_hint"
+            android:maxLength="6"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/registerProvisionCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:singleLine="true"
+                android:text="已阅读并接受  "
+                android:textColor="@color/dark"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/registerProvisionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <Button
+                android:id="@id/register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/register" />
+
+            <Button
+                android:id="@id/cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

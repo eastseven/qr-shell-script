@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/main_content_coupon_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/main_content_coupon_radio_group_airport"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_content_coupon_airport1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/main_airport_shanghai_1" />
+
+        <RadioButton
+            android:id="@+id/main_content_coupon_airport2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/main_airport_shanghai_2" />
+
+        <RadioButton
+            android:id="@+id/main_content_coupon_airport0"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/main_airport_shanghai_0" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/main_content_coupon_radio_group"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/main_content_coupon_radio_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/main_pickup" />
+
+        <RadioButton
+            android:id="@+id/main_content_coupon_radio_seeoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_seeoff" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/main_content_coupon_car_grade"
+        style="@style/form" />
+
+    <EditText
+        android:id="@+id/main_content_coupon_pickup_time"
+        style="@style/form"
+        android:hint="@string/main_pickup_time" >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center" >
+
+        <Button
+            android:id="@id/main_content_coupon_check"
+            style="@style/form_button_check"
+            android:text="@string/main_check" />
+
+        <Button
+            android:id="@id/main_content_coupon_reset"
+            style="@style/form_button_reset"
+            android:text="@string/main_reset" />
+    </LinearLayout>
+
+</LinearLayout>

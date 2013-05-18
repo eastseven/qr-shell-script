@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/main_header_layout_widget" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_header_layout_widget" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingTop="24dp" >
+
+            <TextView
+                android:id="@+id/main_account_version"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:gravity="right"
+                android:textColor="@color/dark" />
+
+            <Button
+                android:id="@+id/main_account_modify_account_info"
+                style="@style/arrow_button_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/main_modify_account_info" />
+
+            <Button
+                android:id="@+id/main_account_modify_password"
+                style="@style/arrow_button_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/main_modify_password" />
+
+            <Button
+                android:id="@+id/main_account_modify_phone_number"
+                style="@style/arrow_button_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/main_modify_phone_number" />
+
+            <Button
+                android:id="@+id/main_account_invite_no"
+                style="@style/arrow_button_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/main_invite_no" />
+
+            <CheckBox
+                android:id="@+id/main_account_auto_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:checked="true"
+                android:text="@string/main_auto_login" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
