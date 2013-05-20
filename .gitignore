@@ -24,3 +24,7 @@ local.properties
 QuickRide-Android-Core/
 QuickRide-Car-Client/
 QuickRide-Passenger-Client/
+
+download.sh
+#download-for-tags.sh
+
