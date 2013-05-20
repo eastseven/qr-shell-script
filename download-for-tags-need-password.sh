@@ -1,12 +1,22 @@
 #!/bin/sh
 
 project_name=QuickRide-Car-Client
-svn_username=$3
-svn_password=$4
+svn_username=$1
+svn_password=$2
 svn_ip=127.0.0.1
 
-version_core=$1
-version_car=$2
+if [[ -z $svn_username ]]
+then
+    read -p 'Enter username: ' svn_username;
+fi
+
+if [[ -z $svn_password ]]
+then
+    read -p 'Enter password: ' svn_password;
+fi
+
+version_core=$3
+version_car=$4
 
 if [[ -z $version_core ]]
 then
