@@ -1,6 +1,7 @@
 #!/bin/sh
 
-project_name=QuickRide-Car-Client
+project_name_core=QuickRide-Android-Core
+project_name_car=QuickRide-Car-Client
 svn_username=$1
 svn_password=$2
 svn_ip=127.0.0.1
@@ -31,14 +32,13 @@ fi
 echo 'core version: ' $version_core;
 echo 'car version: ' $version_car;
 
-rm -rf $project_name
-svn --username $svn_username --password $svn_password checkout svn://$svn_ip/quickride/tags/$project_name-$version_car $project_name
-echo "sdk.dir=$ANDROID_HOME" > $project_name/local.properties
+rm -rf $project_name_core
+svn --username $svn_username --password $svn_password checkout svn://$svn_ip/quickride/tags/$project_name_core-$version_core $project_name_core
+android update project -p $project_name_core -t 10
 
-project_name=QuickRide-Android-Core
-rm -rf $project_name
-svn --username $svn_username --password $svn_password checkout svn://$svn_ip/quickride/tags/$project_name-$version_core $project_name
-echo "sdk.dir=$ANDROID_HOME" > $project_name/local.properties
+rm -rf $project_name_car
+svn --username $svn_username --password $svn_password checkout svn://$svn_ip/quickride/tags/$project_name_car-$version_car $project_name_car
+android update project -p $project_name_car -t 10
 
 #project_name=QuickRide-Passenger-Client
 #rm -rf $project_name
