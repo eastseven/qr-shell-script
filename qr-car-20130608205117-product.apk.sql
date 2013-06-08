@@ -1,0 +1,1 @@
+insert into application values(seq_application.nextval, 'car-formal', 28, '2.1.5', 1236.89, 2, 'Android', '2.2', 'com.quickride.car', '/apkfile/product/qr-car-20130608205117-product.apk', empty_clob(), 8, 1, sysdate);
