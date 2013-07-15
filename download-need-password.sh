@@ -19,3 +19,9 @@ project_name=QuickRide-Passenger-Client
 rm -rf $project_name
 svn --username $svn_username --password $svn_password checkout svn://192.168.1.101/quickride/trunck/$project_name
 echo "sdk.dir=$ANDROID_HOME" > $project_name/local.properties
+
+project_name=wheel
+rm -rf $project_name
+svn --username $svn_username --password $svn_password checkout svn://192.168.1.101/quickride/trunck/$project_name
+cd $project_name
+sh refresh.sh
