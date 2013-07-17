@@ -30,3 +30,4 @@ tmp/
 download.sh
 download-for-tags.sh
 
+*.sql
