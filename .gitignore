@@ -25,6 +25,7 @@ QuickRide-Android-Core/
 QuickRide-Car-Client/
 QuickRide-Passenger-Client/
 wheel/
+tmp/
 
 download.sh
 download-for-tags.sh
